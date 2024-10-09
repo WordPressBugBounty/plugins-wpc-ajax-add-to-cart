@@ -4,8 +4,8 @@ Donate link: https://wpclever.net
 Tags: woocommerce, wpc, ajax, add to cart, add-to-cart
 Requires at least: 4.0
 Tested up to: 6.6
-Version: 2.1.1
-Stable tag: 2.1.1
+Version: 2.1.2
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ Especially, it’s highly recommended to use WPC AJAX Add to Cart with [WPC Fly 
 4. Done!
 
 == Changelog ==
+
+= 2.1.2 =
+* Fixed: Minor CSS/JS issues
 
 = 2.1.1 =
 * Updated: Compatible with WP 6.6 & Woo 9.3

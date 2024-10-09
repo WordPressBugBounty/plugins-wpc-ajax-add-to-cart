@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPC AJAX Add to Cart for WooCommerce 2.1.1\n"
+"Project-Id-Version: WPC AJAX Add to Cart for WooCommerce 2.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpc-ajax-add-to-cart\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-16T04:54:52+00:00\n"
+"POT-Creation-Date: 2024-10-09T04:09:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: wpc-ajax-add-to-cart\n"
@@ -34,60 +34,60 @@ msgstr ""
 msgid "https://wpclever.net"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:124
+#: wpc-ajax-add-to-cart.php:125
 msgid "WPC AJAX Add to Cart"
 msgstr ""
 
 #. translators: stars
-#: wpc-ajax-add-to-cart.php:127
+#: wpc-ajax-add-to-cart.php:128
 msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:129
+#: wpc-ajax-add-to-cart.php:130
 msgid "Reviews"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:130
+#: wpc-ajax-add-to-cart.php:131
 msgid "Changelog"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:131
+#: wpc-ajax-add-to-cart.php:132
 msgid "Discussion"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:136
+#: wpc-ajax-add-to-cart.php:137
 msgid "Settings updated."
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:142
-#: wpc-ajax-add-to-cart.php:332
+#: wpc-ajax-add-to-cart.php:143
+#: wpc-ajax-add-to-cart.php:333
 msgid "Settings"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:145
+#: wpc-ajax-add-to-cart.php:146
 msgid "Essential Kit"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:155
+#: wpc-ajax-add-to-cart.php:156
 msgid "General"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:159
+#: wpc-ajax-add-to-cart.php:160
 msgid "Enable for product types"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:163
+#: wpc-ajax-add-to-cart.php:164
 msgid "All"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:262
+#: wpc-ajax-add-to-cart.php:263
 msgid "Please choose the quantity of items you wish to add to your cart&hellip;"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:282
+#: wpc-ajax-add-to-cart.php:283
 msgid "Please choose a product to add to your cart&hellip;"
 msgstr ""
 
-#: wpc-ajax-add-to-cart.php:348
+#: wpc-ajax-add-to-cart.php:349
 msgid "Community support"
 msgstr ""

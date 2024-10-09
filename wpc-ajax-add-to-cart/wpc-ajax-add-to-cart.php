@@ -3,7 +3,7 @@
  * Plugin Name: WPC AJAX Add to Cart for WooCommerce
  * Plugin URI: https://wpclever.net/
  * Description: AJAX add to cart for WooCommerce products.
- * Version: 2.1.1
+ * Version: 2.1.2
  * Author: WPClever
  * Author URI: https://wpclever.net
  * Text Domain: wpc-ajax-add-to-cart
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.1' );
+! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.2' );
 ! defined( 'WOOAA_LITE' ) && define( 'WOOAA_LITE', __FILE__ );
 ! defined( 'WOOAA_FILE' ) && define( 'WOOAA_FILE', __FILE__ );
 ! defined( 'WOOAA_URI' ) && define( 'WOOAA_URI', plugin_dir_url( __FILE__ ) );
@@ -75,6 +75,7 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 				'.woopq-disabled',
 				'.wpcpo-disabled',
 				'.wpcbn-btn',
+				'.wpcme-btn',
 				'.wpcev-btn',
 				'.wpcuv-update'
 			] );
