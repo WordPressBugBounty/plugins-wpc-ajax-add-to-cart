@@ -40,7 +40,8 @@
           function(e) {
             var wooaa = false;
             var $btn = $(this);
-            var $form = $btn.closest('form.cart');
+            var $form = $btn.closest('.wpc_cart').length ? $btn.closest(
+                '.wpc_cart') : $btn.closest('form.cart');
 
             if (wooaa_vars.product_types !== undefined) {
               var product_types = wooaa_vars.product_types.split(',');
