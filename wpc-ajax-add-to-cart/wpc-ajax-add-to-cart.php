@@ -3,7 +3,7 @@
  * Plugin Name: WPC AJAX Add to Cart for WooCommerce
  * Plugin URI: https://wpclever.net/
  * Description: AJAX add to cart for WooCommerce products.
- * Version: 2.1.3
+ * Version: 2.1.4
  * Author: WPClever
  * Author URI: https://wpclever.net
  * Text Domain: wpc-ajax-add-to-cart
@@ -12,17 +12,18 @@
  * Requires at least: 4.0
  * Tested up to: 6.7
  * WC requires at least: 3.0
- * WC tested up to: 9.4
+ * WC tested up to: 9.5
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.3' );
+! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.4' );
 ! defined( 'WOOAA_LITE' ) && define( 'WOOAA_LITE', __FILE__ );
 ! defined( 'WOOAA_FILE' ) && define( 'WOOAA_FILE', __FILE__ );
 ! defined( 'WOOAA_URI' ) && define( 'WOOAA_URI', plugin_dir_url( __FILE__ ) );
+! defined( 'WOOAA_DIR' ) && define( 'WOOAA_DIR', plugin_dir_path( __FILE__ ) );
 ! defined( 'WOOAA_REVIEWS' ) && define( 'WOOAA_REVIEWS', 'https://wordpress.org/support/plugin/wpc-ajax-add-to-cart/reviews/?filter=5' );
 ! defined( 'WOOAA_CHANGELOG' ) && define( 'WOOAA_CHANGELOG', 'https://wordpress.org/plugins/wpc-ajax-add-to-cart/#developers' );
 ! defined( 'WOOAA_DISCUSSION' ) && define( 'WOOAA_DISCUSSION', 'https://wordpress.org/support/plugin/wpc-ajax-add-to-cart/' );
@@ -48,6 +49,9 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 		function __construct() {
 			self::$settings = (array) get_option( 'wooaa_settings', [] );
 
+			// init
+			add_action( 'init', [ $this, 'init' ] );
+
 			// frontend
 			add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 99 );
 
@@ -60,6 +64,11 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 			add_action( 'admin_menu', [ $this, 'admin_menu' ] );
 			add_filter( 'plugin_action_links', [ $this, 'action_links' ], 10, 2 );
 			add_filter( 'plugin_row_meta', [ $this, 'row_meta' ], 10, 2 );
+		}
+
+		function init() {
+			// load text-domain
+			load_plugin_textdomain( 'wpc-ajax-add-to-cart', false, basename( WOOAA_DIR ) . '/languages/' );
 		}
 
 		function enqueue_scripts() {
