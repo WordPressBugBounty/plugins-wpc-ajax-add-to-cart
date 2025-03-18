@@ -3,7 +3,7 @@
  * Plugin Name: WPC AJAX Add to Cart for WooCommerce
  * Plugin URI: https://wpclever.net/
  * Description: AJAX add to cart for WooCommerce products.
- * Version: 2.1.4
+ * Version: 2.1.5
  * Author: WPClever
  * Author URI: https://wpclever.net
  * Text Domain: wpc-ajax-add-to-cart
@@ -12,14 +12,14 @@
  * Requires at least: 4.0
  * Tested up to: 6.7
  * WC requires at least: 3.0
- * WC tested up to: 9.5
+ * WC tested up to: 9.7
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.4' );
+! defined( 'WOOAA_VERSION' ) && define( 'WOOAA_VERSION', '2.1.5' );
 ! defined( 'WOOAA_LITE' ) && define( 'WOOAA_LITE', __FILE__ );
 ! defined( 'WOOAA_FILE' ) && define( 'WOOAA_FILE', __FILE__ );
 ! defined( 'WOOAA_URI' ) && define( 'WOOAA_URI', plugin_dir_url( __FILE__ ) );
@@ -136,9 +136,12 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
                     <p>
 						<?php printf( /* translators: stars */ esc_html__( 'Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating.', 'wpc-ajax-add-to-cart' ), '<span style="color:#ffb900">&#9733;&#9733;&#9733;&#9733;&#9733;</span>' ); ?>
                         <br/>
-                        <a href="<?php echo esc_url( WOOAA_REVIEWS ); ?>" target="_blank"><?php esc_html_e( 'Reviews', 'wpc-ajax-add-to-cart' ); ?></a> |
-                        <a href="<?php echo esc_url( WOOAA_CHANGELOG ); ?>" target="_blank"><?php esc_html_e( 'Changelog', 'wpc-ajax-add-to-cart' ); ?></a> |
-                        <a href="<?php echo esc_url( WOOAA_DISCUSSION ); ?>" target="_blank"><?php esc_html_e( 'Discussion', 'wpc-ajax-add-to-cart' ); ?></a>
+                        <a href="<?php echo esc_url( WOOAA_REVIEWS ); ?>"
+                           target="_blank"><?php esc_html_e( 'Reviews', 'wpc-ajax-add-to-cart' ); ?></a> |
+                        <a href="<?php echo esc_url( WOOAA_CHANGELOG ); ?>"
+                           target="_blank"><?php esc_html_e( 'Changelog', 'wpc-ajax-add-to-cart' ); ?></a> |
+                        <a href="<?php echo esc_url( WOOAA_DISCUSSION ); ?>"
+                           target="_blank"><?php esc_html_e( 'Discussion', 'wpc-ajax-add-to-cart' ); ?></a>
                     </p>
                 </div>
 				<?php if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) { ?>
@@ -148,7 +151,8 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
 				<?php } ?>
                 <div class="wpclever_settings_page_nav">
                     <h2 class="nav-tab-wrapper">
-                        <a href="<?php echo esc_url( admin_url( 'admin.php?page=wpclever-wooaa&tab=settings' ) ); ?>" class="<?php echo esc_attr( $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
+                        <a href="<?php echo esc_url( admin_url( 'admin.php?page=wpclever-wooaa&tab=settings' ) ); ?>"
+                           class="<?php echo esc_attr( $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 							<?php esc_html_e( 'Settings', 'wpc-ajax-add-to-cart' ); ?>
                         </a>
                         <a href="<?php echo esc_url( admin_url( 'admin.php?page=wpclever-kit' ) ); ?>" class="nav-tab">
@@ -198,12 +202,15 @@ if ( ! class_exists( 'WPCleverWooaa' ) && class_exists( 'WC_Product' ) ) {
                     <div class="wpclever_settings_page_suggestion_content">
                         <div>
                             To display custom engaging real-time messages on any wished positions, please install
-                            <a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart Messages</a> plugin. It's free!
+                            <a href="https://wordpress.org/plugins/wpc-smart-messages/" target="_blank">WPC Smart
+                                Messages</a> plugin. It's free!
                         </div>
                         <div>
                             Wanna save your precious time working on variations? Try our brand-new free plugin
-                            <a href="https://wordpress.org/plugins/wpc-variation-bulk-editor/" target="_blank">WPC Variation Bulk Editor</a> and
-                            <a href="https://wordpress.org/plugins/wpc-variation-duplicator/" target="_blank">WPC Variation Duplicator</a>.
+                            <a href="https://wordpress.org/plugins/wpc-variation-bulk-editor/" target="_blank">WPC
+                                Variation Bulk Editor</a> and
+                            <a href="https://wordpress.org/plugins/wpc-variation-duplicator/" target="_blank">WPC
+                                Variation Duplicator</a>.
                         </div>
                     </div>
                 </div>
