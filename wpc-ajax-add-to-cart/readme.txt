@@ -2,9 +2,9 @@
 Contributors: wpclever
 Donate link: https://wpclever.net
 Tags: woocommerce, wpc, ajax, add to cart, add-to-cart
-Tested up to: 6.7
-Version: 2.1.5
-Stable tag: 2.1.5
+Tested up to: 6.8
+Version: 2.1.6
+Stable tag: 2.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,10 @@ It is a highly effective plugin for helping online stores cut down the site’s 
 == Description ==
 
 **WPC AJAX Add to Cart for WooCommerce** is a highly effective plugin for helping online stores cut down the site’s loading time, improve the user experience, and increase sales. This plugin allows products to be added to the cart immediately without reloading the whole site to see the changes. It’s super easy to use, just click Install then Activate it and enjoy yourself.
+
+= Live demo =
+
+Visit our [live demo](https://demo.wpclever.net/wooac/product/t-shirt/?utm_source=content&utm_medium=wooaa&utm_campaign=wporg "live demo") here to see how this plugin works.
 
 = Advanced shopping experience =
 
@@ -45,6 +49,10 @@ Especially, it’s highly recommended to use WPC AJAX Add to Cart with [WPC Fly 
 4. Done!
 
 == Changelog ==
+
+= 2.1.6 =
+* Fixed: Minor CSS/JS issues in the backend
+* Updated: Compatible with WP 6.8 & Woo 9.9
 
 = 2.1.5 =
 * Updated: Optimized the code
